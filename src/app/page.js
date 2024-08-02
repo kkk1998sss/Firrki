@@ -1,113 +1,381 @@
-import Image from "next/image";
+// // Header and hero sectio of this 
 
-export default function Home() {
+// "use client";
+
+// import Image from 'next/image';
+// import { useState, useRef, useEffect } from 'react';
+// import { FaHeart, FaShoppingCart, FaUser, FaSearch } from 'react-icons/fa';
+
+// const Header = () => {
+//   const [currency, setCurrency] = useState('INR ₹');
+//   const [searchOpen, setSearchOpen] = useState(false);
+//   const [modalOpen, setModalOpen] = useState(false);
+//   const [activeTab, setActiveTab] = useState('login');
+//   const searchRef = useRef(null);
+
+//   const toggleSearch = () => {
+//     setSearchOpen(!searchOpen);
+//   };
+
+//   const closeSearch = () => {
+//     setSearchOpen(false);
+//   };
+
+//   useEffect(() => {
+//     const handleClickOutside = (event) => {
+//       if (searchRef.current && !searchRef.current.contains(event.target)) {
+//         closeSearch();
+//       }
+//     };
+
+//     document.addEventListener('mousedown', handleClickOutside);
+//     return () => {
+//       document.removeEventListener('mousedown', handleClickOutside);
+//     };
+//   }, []);
+
+//   const toggleModal = () => {
+//     setModalOpen(!modalOpen);
+//   };
+
+//   const handleTabSwitch = (tab) => {
+//     setActiveTab(tab);
+//   };
+
+//   return (
+//     <div>
+//       <header className="bg- #2C4456" style={{ backgroundColor: '#9F7F7E' }}>
+//         <div className="text-center py-4 text-base font-normal text-white">
+//           Free Shipping on all domestic orders - Shop Now
+//         </div>
+//         <div className="py-1 px-5 flex items-center justify-between" style={{ backgroundColor: '#ececec' }}>
+//           <div className="flex items-center">
+//             <Image src="/Firrki_Logo.png" alt="Firki Logo" width={250} height={350} />
+//             <nav className="ml-8 flex items-center space-x-6 text-base" style={{ marginLeft: '17.5rem' }}>
+//               <a href="#" className="hover:text-[#AD8C87] font-bold">Home</a>
+//               <a href="#" className="hover:text-[#AD8C87] font-bold">About</a>
+//               <a href="#" className="hover:text-[#AD8C87] font-bold">Shop</a>
+//               <a href="#" className="hover:text-[#AD8C87] font-bold flex items-center">
+//                 <Image src="/Firbhet_Logo.jpeg" alt="Firbhet Logo" width={48} height={58} />
+//               </a>
+//               <a href="#" className="hover:text-[#AD8C87] font-bold">Contact</a>
+//             </nav>
+//           </div>
+//           <div className="flex items-center space-x-4" style={{ marginRight: '20px' }}>
+//             <div className="relative" ref={searchRef} style={{ marginLeft: '-50px' }}>
+//               <FaSearch
+//                 onClick={toggleSearch}
+//                 className="w-6 h-6 cursor-pointer text-white"
+//               />
+//               {searchOpen && (
+//                 <div className="absolute mt-2 left-0">
+//                   <input
+//                     type="text"
+//                     placeholder="Search"
+//                     className="pl-8 pr-4 py-2 rounded-full text-sm border border-gray-300 focus:outline-none focus:border-pink-500"
+//                     style={{ backgroundColor: '#d9e2d6' }}
+//                   />
+//                 </div>
+//               )}
+//             </div>
+//             <select
+//               value={currency}
+//               onChange={(e) => setCurrency(e.target.value)}
+//               className="text-sm border border-gray-300 py-2 px-3 rounded-full focus:outline-none focus:border-pink-500"
+//               style={{ backgroundColor: '#d9e2d6' }}
+//             >
+//               <option value="INR ₹">INR ₹</option>
+//               <option value="USD $">USD $</option>
+//               <option value="EUR €">EUR €</option>
+//             </select>
+//             <div className="flex space-x-4">
+//               <a href="#" className="hover:text-[#AD8C87]">
+//                 <FaHeart className="w-6 h-6 text-white" />
+//               </a>
+//               <a href="#" className="hover:text-[#AD8C87]">
+//                 <FaShoppingCart className="w-6 h-6 text-white" />
+//               </a>
+//               <a href="#" className="hover:text-[#AD8C87]" onClick={toggleModal}>
+//                 <FaUser className="w-6 h-6 text-white" />
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </header>
+
+    
+
+
+
+// <div className="p-2 flex">
+//   <div className="relative h-64 w-[70%] mx-2">
+//     <Image
+//       src="/master1.jpeg"
+//       alt="New Section Image 1"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+//   <div className="relative h-64 w-[30%] mx-2">
+//     <Image
+//       src="/master2.jpeg"
+//       alt="New Section Image 2"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+// </div>
+// <div className="p-2 flex">
+ 
+//   <div className="relative h-64 w-[30%] mx-2">
+//     <Image
+//       src="/master3.jpeg"
+//       alt="New Section Image 2"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+//   <div className="relative h-64 w-[70%] mx-2">
+//     <Image
+//       src="/master4.jpeg"
+//       alt="New Section Image 1"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+// </div>
+
+// <div className="p-2 flex">
+ 
+//   <div className="relative h-24 w-[100%] mx-2">
+//     <Image
+//       src="/master5.png"
+//       alt="New Section Image 2"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+  
+// </div>
+// <div className="p-2 flex">
+ 
+//   <div className="relative h-64 w-[25%] mx-2">
+//     <Image
+//       src="/master5.jpeg"
+//       alt="New Section Image 2"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+//   <div className="relative h-64 w-[25%] mx-2">
+//     <Image
+//       src="/master6.jpeg"
+//       alt="New Section Image 1"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+//   <div className="relative h-64 w-[25%] mx-2">
+//     <Image
+//       src="/master7.jpeg"
+//       alt="New Section Image 1"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+//   <div className="relative h-64 w-[25%] mx-2">
+//     <Image
+//       src="/master8.jpeg"
+//       alt="New Section Image 1"
+//       layout="fill"
+//       objectFit="cover"
+//       className="rounded-lg shadow-md"
+//     />
+//   </div>
+// </div>
+
+
+      
+      
+
+//       {modalOpen && (
+//         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+//           <div className="bg-white p-8 rounded-lg shadow-lg relative">
+//             <button className="absolute top-2 right-2 text-gray-500" onClick={toggleModal}>X</button>
+//             <div className="mb-4">
+//               <button
+//                 className={`px-4 py-2 ${activeTab === 'login' ? 'bg-gray-200' : ''}`}
+//                 onClick={() => handleTabSwitch('login')}
+//               >
+//                 Login
+//               </button>
+//               <button
+//                 className={`px-4 py-2 ${activeTab === 'register' ? 'bg-gray-200' : ''}`}
+//                 onClick={() => handleTabSwitch('register')}
+//               >
+//                 Register
+//               </button>
+//             </div>
+//             {activeTab === 'login' && (
+//               <div>
+//                 <h2 className="text-2xl font-bold mb-4">Login</h2>
+//                 {/* Login form goes here */}
+//               </div>
+//             )}
+//             {activeTab === 'register' && (
+//               <div>
+//                 <h2 className="text-2xl font-bold mb-4">Register</h2>
+//                 {/* Registration form goes here */}
+//               </div>
+//             )}
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Header;
+
+//// For one step above of footer section 
+
+//  "use client"
+//  const Footer = () => {
+//   return (
+//     <div
+//       className="relative w-full bg-no-repeat text-center py-12"
+//       style={{
+//         backgroundImage: `url('/tigerMaster.jpeg')`,
+//         backgroundSize: 'contain',
+//         backgroundPosition: 'center',
+//         backgroundRepeat: 'no-repeat',
+//         minHeight: '100vh',
+//       }}
+//     >
+//       <h2 className="text-4xl font-semibold text-pink-600 mb-8">
+//         Customer Love in Every Thread
+//       </h2>
+//       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+//         <div className="p-4">
+//           <p className="text-lg italic mb-4">
+//             Great shopping experience that I haven't seen in a while. I had a great time looking around here and would like to recommend it to everyone.
+//           </p>
+//           <p className="font-bold">Anthony Garcia</p>
+//           <p>New York</p>
+//         </div>
+//         <div className="p-4">
+//           <p className="text-lg italic mb-4">
+//             This is one of the best interior store. They have a lot of things for you to explore. The price is reasonable and customer service is dedicated.
+//           </p>
+//           <p className="font-bold">Gloria Simpson</p>
+//           <p>Arizona</p>
+//         </div>
+//         <div className="p-4">
+//           <p className="text-lg italic mb-4">
+//             I received my table yesterday. What an exceptional product quality! The delivery service is real quick. This will be one of my favorite store.
+//           </p>
+//           <p className="font-bold">Karen Rose</p>
+//           <p>San Jose</p>
+//         </div>
+//       </div>
+//       <div className="flex justify-center mt-8">
+//         <span className="w-3 h-3 bg-pink-600 rounded-full mx-1"></span>
+//         <span className="w-3 h-3 bg-pink-600 rounded-full mx-1"></span>
+//         <span className="w-3 h-3 bg-pink-600 rounded-full mx-1"></span>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Footer;
+
+
+//  "use client"
+// import React from 'react';
+// import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+
+// const Footer = () => {
+//   return (
+//     <div
+//       className="relative w-full bg-no-repeat bg-cover text-center py-12"
+//       style={{
+//         backgroundImage: `url('/footer.jpeg')`,
+//         backgroundSize: 'cover',
+//         backgroundPosition: 'center',
+//         minHeight: '100vh',
+//       }}
+//     >
+//       <h2 className="text-3xl font-semibold text-gray-700 mb-8">
+//         Transform Your Space: Discover Elegance in Every Thread
+//       </h2>
+//       <div className="flex justify-center mb-8">
+//         <img src="/Firrki_Logo.png" alt="Firki Logo" className="h-16" />
+//       </div>
+//       <div className="flex justify-center space-x-4 mb-8">
+//         <FaFacebookF className="text-2xl text-gray-700 hover:text-gray-900" />
+//         <FaInstagram className="text-2xl text-gray-700 hover:text-gray-900" />
+//         <FaYoutube className="text-2xl text-gray-700 hover:text-gray-900" />
+//       </div>
+//       <p className="mb-8 text-gray-700">
+//         Stay in the Loop: Discover New Arrivals and Exclusive Discounts First
+//       </p>
+//       <input
+//         type="email"
+//         placeholder="Enter your Email Address"
+//         className="p-2 border border-gray-300 rounded"
+//       />
+//       <div className="grid grid-cols-2 gap-8 mt-12">
+//         <div>
+//           <h3 className="font-semibold text-gray-700 mb-4">QUICK LINKS</h3>
+//           <ul className="text-left space-y-2">
+//             <li>About Us</li>
+//             <li>FAQs</li>
+//             <li>Returns and Exchange</li>
+//             <li>Refunds</li>
+//             <li>Privacy Policy</li>
+//             <li>Terms and Conditions</li>
+//           </ul>
+//         </div>
+//         <div>
+//           <h3 className="font-semibold text-gray-700 mb-4">PRODUCTS</h3>
+//           <ul className="text-left space-y-2">
+//             <li>New Arrivals</li>
+//             <li>Bed Linen</li>
+//             <li>Cushions</li>
+//             <li>Table Linen</li>
+//             <li>Gifting</li>
+//             <li>Personalization</li>
+//           </ul>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Footer;
+
+
+import React from 'react';
+import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <><Header />
+    <MainContent />
+    <Footer/>
+    </>
   );
-}
+};
+
+export default Home;
