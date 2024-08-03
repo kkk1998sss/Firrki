@@ -53,7 +53,7 @@ const Header = () => {
             <Image src="/Firrki_Logo.png" alt="Firki Logo" width={250} height={350} />
             <nav className="ml-8 flex items-center space-x-6 text-base" style={{ marginLeft: '17.5rem' }}>
               <a href="#" className="hover:text-[#AD8C87] font-bold">Home</a>
-              <a href="#" className="hover:text-[#AD8C87] font-bold">About</a>
+              <a href="#" className="hover:text-[#AD8C87] font-bold">Our Story</a>
               <a href="#" className="hover:text-[#AD8C87] font-bold">Shop</a>
               <a href="#" className="hover:text-[#AD8C87] font-bold flex items-center">
                 <Image src="/Firbhet_Logo.jpeg" alt="Firbhet Logo" width={48} height={58} />
@@ -104,16 +104,25 @@ const Header = () => {
       </header>
 
       <div className="p-2 flex">
-        <div className="relative h-64 w-[70%] mx-2">
-          <Image
-            src="/master1.jpeg"
-            alt="New Section Image 1"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-md"
-          />
+       
+         <div className="relative h-96 w-[70%] mx-2">
+          <div
+            className="relative h-full w-full bg-cover bg-center rounded-lg shadow-md flex flex-col justify-between"
+            style={{ backgroundImage: 'url("/master1.jpeg")' }}
+          >
+            <button className="bg-white text-black py-2 px-4  mx-4 mt-20 self-start hover:bg-gray-300 ml-14">
+              Home
+            </button>
+            
+           
+            <button style={{ marginInlineStart: '4.7rem', padding: '6px 42px', transform: 'translateY(-59px)' }} className="bg-white text-black py-2 px-4 mx-2 mb-4 self-start hover:bg-gray-300">
+              EXPLORE
+            </button>
+
+
+          </div>
         </div>
-        <div className="relative h-64 w-[30%] mx-2">
+        <div className="relative h-96 w-[30%] mx-2">
           <Image
             src="/master2.jpeg"
             alt="New Section Image 2"
@@ -124,7 +133,7 @@ const Header = () => {
         </div>
       </div>
       <div className="p-2 flex">
-        <div className="relative h-64 w-[30%] mx-2">
+        <div className="relative h-96 w-[30%] mx-2">
           <Image
             src="/master3.jpeg"
             alt="New Section Image 3"
@@ -133,14 +142,36 @@ const Header = () => {
             className="rounded-lg shadow-md"
           />
         </div>
-        <div className="relative h-64 w-[70%] mx-2">
-          <Image
-            src="/master4.jpeg"
-            alt="New Section Image 4"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-md"
-          />
+        
+        <div className="relative h-96 w-[70%] mx-2">
+          <div
+            className="relative h-full w-full bg-cover bg-center rounded-lg shadow-md flex flex-col justify-between"
+            style={{ backgroundImage: 'url("/master4.jpeg")' }}
+          >
+            <button
+            style={{
+               transform: 'translateY(1px) translateX(-40px)'
+
+            }}
+             className="bg-white text-black py-2 px-4  mx-4 mt-20 self-end hover:bg-gray-300 mr-10">
+              Home
+            </button>
+            
+            
+            
+            <button 
+             style={{ 
+            padding: '6px 42px', 
+            transform: 'translateY(-64px) translateX(-91px)'  // Adjust this value as needed
+            }} 
+           className="bg-white text-black py-2 px-4 mx-2 mb-4 self-end hover:bg-gray-300"
+           >
+              Discover
+          </button>
+
+
+
+          </div>
         </div>
       </div>
 
@@ -154,6 +185,7 @@ const Header = () => {
             className="rounded-lg shadow-md"
           />
         </div>
+         
       </div>
 
       <div className="p-2 flex">

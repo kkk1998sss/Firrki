@@ -7,9 +7,11 @@ const LastHeroSection = () => {
      style={{
        backgroundImage: 'url(/tigerMaster.jpeg)',
        backgroundSize: 'contain',
+       backgroundSize: '98% auto',
        backgroundPosition: 'center',
        backgroundRepeat: 'no-repeat',
-       minHeight: '100vh',
+       minHeight: '77vh'
+       
      }}
    >
      <h2 className="text-4xl font-semibold text-pink-600 mb-8">
@@ -48,3 +50,5 @@ const LastHeroSection = () => {
 };
 
 export default LastHeroSection;
+
+
